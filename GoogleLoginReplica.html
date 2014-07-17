@@ -11,8 +11,36 @@
 		</div> 
 
         <div class="TableDiv">
-			<table class = "ContentsTable" width=374 height=350 align="center">
-			<Tr/>
+			<table class="ContentsTable" width=374 height=350 align="center">
+				<tr>
+					<th class="ImageHeader" height=136>
+					<img class="photoImage" src="Images\PhotoIcon.png" />
+					</th>
+				</tr>
+				<tr>
+					<td class="EmailHeader" height=66>
+					<input class="Email" type="email"  align="top"size=50/> 
+					</td>
+				</tr>
+				<tr>
+					<td class="PasswordHeader" height=44>
+					<input class="Password" type="password"  align="top"size=50/> 
+					</td>
+				</tr>
+				<tr>
+					<td class="SignInHeader" height=44>
+					<input class="SignIn" type="submit" value="Sign in" align="top"size=50/> 
+					</td>
+				</tr>
+				<tr>
+					<td class="StaySignedInHeader">
+					<input class="StaySignedIn" type="checkbox" value="Sign in" align="top" 
+					size=50> Stay signed in </input>
+					&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						<a href="https://www.google.com/accounts/recovery?hl=en&ard=AHwGkRkUVfwRCm8rDX5fKafp4kgfi-wWXLZZGZmaVFpZ8OSEM3j5bUzpIeToOamTlJ-gooOLSvoGrnHsztgyMhNVYjaQvB9vtgPB8y7IO6cqPQXDydkiCKXgT4lzIItWp66Gn5Q_z4RGpPyMKBKoeFhLSluxjxxwn_jnRJYt2j1m7vyaupPGIlP7lbAGLjcHwIPHZNn5fPtHLU1sX42ky7SMPccPCb2PxnS04hqsGvRPPtZuFKr8Rrc&service=mail" class="Help">Need any help?
+						</a>
+					</td>
+				</tr>
 			</table>
 		</div>
 
@@ -58,12 +86,103 @@
 }
 
 .ContentsTable {
-	border:1px solid black
-	border-color: black;
 	width:374px; 
 	height: 350px;
 	background-color:#f7f7f7;
 	box-shadow:0px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 0px;
+}
+.ImageHeader {
+	 vertical-align: top;
+	 padding-top: 40px;
+}
+.photoImage {
+	width: 96px;
+	height: 96px;
+	border-radius: 50%;
+}
+
+.EmailHeader{
+	padding-top:20px;
+	vertical-align:top;
+	text-align: center;
+}
+.Email{
+	vertical-align: top;
+	height: 44px;
+	width: 70%;
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+}
+
+.PasswordHeader{
+	padding-top:0px;
+	vertical-align:top;
+	text-align: center;
+	padding-bottom:0px;
+}
+.Password{
+	vertical-align: top;
+	height: 44px;
+	width: 70%;
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	padding-top: 0px;
+}
+
+.SignInHeader {
+	padding-top:10px;
+	vertical-align:top;
+	text-align: center;
+	padding-bottom:0px;
+}
+.SignIn{
+	border: 1px solid #0099FF;
+	vertical-align: top;
+	height: 44px;
+	width: 70%;
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	padding-top: 0px;
+	background-color: #0099FF;
+	color: #ffffff;
+}
+.SignIn:active{
+	border: 1px solid #3399FF;
+	vertical-align: top;
+	height: 44px;
+	width: 70%;
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	padding-top: 0px;
+	background-color: #3399FF;
+	text-shadow: 0 1px rgba(0,0,0,0.1);
+	color: #ffffff;
+}
+
+.StaySignedInHeader{
+	padding-top:10px;
+	vertical-align:top;
+	padding-bottom:0px;
+	padding-left:50px;
+	text-align: left;
+	font-size: 13px;
+	color: #404040;
+	font-family: Arial, sans-serif;
+}	
+.StaySignedIn{
+	padding-top: 0px;
+}
+
+.Help{
+	text-decoration: none;
+	color: #427fed;
+	ont-family: Arial, sans-serif;
+}
+.Help:active{
+	text-decoration: underline;
+	color: #427fed;
+	ont-family: Arial, sans-serif;
 }
 
 .CreateAccountLink{
